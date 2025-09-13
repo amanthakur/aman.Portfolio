@@ -1,0 +1,9 @@
+.footer {
+  background-color: lab(44.0605% 29.0279 -86.0352);
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  padding: 20px;
+  text-align: center;
+}

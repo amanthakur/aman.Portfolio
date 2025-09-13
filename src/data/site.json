@@ -1,0 +1,41 @@
+{
+  "siteTitle": "My React Website",
+  "navbar": [
+    { "label": "Home", "path": "/" },
+    { "label": "About", "path": "/about" },
+    { "label": "Contact", "path": "/contact" }
+  ],
+
+  "Skills": {
+    "title": "Product Design",
+    "subtitle": "I craft scalable solutions to complex problems through UX strategy, enterprise workflows, and design systems.",
+    "image": "/images/hero.jpg",
+    "items": [
+      {
+        "id": "ux",
+        "title": "Product Design",
+        "description": "I craft scalable solutions to complex problems through UX strategy, enterprise workflows, and design systems. I have led multiple product design teams across domains — building products that users love and businesses trust.",
+        "icon": "/assets/namsate.svg"
+      },
+      {
+        "id": "ui",
+        "title": "UI Design",
+        "description": "I transform numbers into impactful stories. With deep expertise in dashboards, visual analytics, and executive data storytelling, I empower decision-makers to see what matters – fast.",
+        "icon": "/assets/namsate.svg"
+      },
+      {
+        "id": "proto",
+        "title": "Prototyping",
+        "description": "I am focused on democratising business communication as a true power tool to help leaders motivate and move organisations using techniques that world leaders use to nudge millions.",
+        "icon": "/assets/namsate.svg"
+      }
+    ]
+  },
+  "aboutSection": {
+    "heading": "About Us",
+    "content": "We are building a React site powered by a single JSON file."
+  },
+  "footer": {
+    "text": "© 2025 My Website. All rights reserved."
+  }
+}

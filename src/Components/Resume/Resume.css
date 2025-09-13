@@ -1,0 +1,81 @@
+.Resume {
+    padding-top: 8%;
+    border-radius: 8px;
+}
+.Resume h2 {
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 72px;
+    font-weight: 700 !important;
+}
+
+
+.Resume .btn {
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+
+}
+
+.resume-details {
+    width: 100%;
+ 
+}
+
+.resume-details h3 {
+    padding: 2% 2% 0 0;
+    line-height: 15px;
+}
+
+.resume-details p {
+    padding: 2% 2% 0 0;
+    line-height: 35px;
+}
+
+.resume-details img {
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.experience h2 {
+  width: 100%;
+  text-align: left;
+  font-size: 72px;
+  margin-top: 2%;
+  
+
+}
+
+.job {
+  width: 100%;
+  text-align: left;
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-date {
+ width: 30%;
+ padding: 3%;
+}
+
+.job-details {
+ width: 70%;
+ padding: 3%;
+}
+
+.job-details h3 {
+font-size: 36px;
+line-height: 15px !important;
+
+
+}
+
+.job-details h4 {
+font-size: 24px;
+color: #000000!important;
+line-height: 75px;
+}
+.job-details p {
+font-size: 18px;
+}

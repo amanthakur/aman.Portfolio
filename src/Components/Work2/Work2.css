@@ -1,0 +1,161 @@
+/* ...existing code... */
+.work-section {
+  margin: 0 auto;
+}
+
+.margin-top {
+  margin-top: 60px!important;
+}
+
+.work-section h2 {
+  color: #21017E;
+  font-size: 42px;
+  margin-bottom: 60px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Card that contains image and overlay text */
+.work-card {
+  position: relative;
+  width: 100%;
+  height: 640px; /* adjust as needed */
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(5,8,30,0.06);
+  background: #000; /* fallback while image loads */
+}
+
+/* image anchored to bottom and covers card */
+.work-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom; /* keep bottom aligned */
+  display: block;
+  transform-origin: center;
+  transition: transform 400ms ease;
+}
+
+/* subtle zoom on hover */
+.work-card:hover .work-image {
+  transform: scale(1.03);
+}
+
+.work-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center; /* change to flex-end to push text to bottom */
+  justify-content: center; /* change to flex-start for left alignment */
+  padding: 28px;
+  pointer-events: none;
+  z-index: 1;
+
+  /* base dark wash covering the full image so text is visible immediately */
+  background: rgba(0,0,0,0.65);
+  transition: background 300ms ease;
+}
+
+/* gradient layer (appears on hover) */
+.work-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.95) 0%,
+    rgba(33,1,126,0.92) 18%,
+    rgba(33,1,126,0.72) 40%,
+    rgba(33,1,126,0.45) 60%,
+    rgba(0,0,0,0.12) 85%,
+    rgba(0,0,0,0) 100%
+  );
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 320ms ease, transform 320ms cubic-bezier(.2,.9,.2,1);
+  pointer-events: none;
+  will-change: opacity, transform;
+  z-index: 2;
+}
+
+/* show the gradient on hover */
+.work-card:hover .work-overlay::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* keep text above overlays; subtle panel initially, stronger on hover */
+.work-text {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  color: #fff;
+  max-width: 100%;
+  text-align: center;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  /* subtle panel on top of base wash so text remains readable */
+  padding: 14px 20px;
+  transition: background 300ms ease, transform 300ms cubic-bezier(.2,.9,.2,1);
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+.work-card:hover .work-text {
+  transform: translateY(-4px);
+}
+
+.work-text h3 {
+  margin: 0 0 8px;
+  font-size: 48px;
+  color: #fff;
+}
+
+.work-text p {
+  margin: 0 0 16px;
+  line-height: 1.5;
+  opacity: 0.95;
+  font-size: 16px;
+}
+
+/* button */
+.work-btn {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: none;
+  padding: 20px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.work-btn:hover {
+  background-color: #E0E5FF;
+  color: #21017E;
+}
+/* responsive */
+@media (max-width: 900px) {
+  .work-card { height: 320px; }
+  .work-text h3 { font-size: 22px; }
+  .work-text p { font-size: 15px; }
+}
+
+@media (max-width: 480px) {
+  .work-card { height: 260px; }
+  .work-overlay { padding: 16px; }
+  .work-text p { display: none; } /* hide long paragraph on very small screens if desired */
+}
+ h4 {
+    font-size: 18px !important;
+    font-weight: 200;
+    color: #ffffff;
+    margin: 0 0 12px;
+    line-height: 1.4;
+}
+
+

@@ -1,0 +1,152 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 4%;
+  padding-bottom: 6%;
+   box-shadow: inset 0 8px 10px -8px rgba(188, 198, 253, 0.4);
+}
+
+.contact-container h3 {
+  margin: 10px 0;
+  font-size: 34px;
+}
+
+.contact-container h2 {
+  margin: 10px 0;
+  font-size: 44px;
+}
+
+
+.contact-container p {
+
+  padding-top: 1%!important;
+
+}
+
+
+
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px 6px;
+  border: none;                    /* remove all borders */
+  border-bottom: 1px solid #ccc;   /* single bottom line */
+  border-radius: 0;                /* remove rounding so only bottom line shows */
+  background: transparent;         /* transparent background */
+  outline: none;                   /* remove default focus outline */
+  box-shadow: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+  font: inherit;
+  color: inherit;
+}
+
+/* keep textarea height control but same visual style */
+.contact-form textarea {
+  min-height: 80px;
+  resize: vertical;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* focus/active state - stronger bottom line */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom-color: #21017E;
+  box-shadow: 0 2px 0 rgba(33,1,126,0.06);
+}
+
+/* optional placeholder styling */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+}
+
+
+
+.contact-form button {
+  /* smaller, compact button and placed at the right */
+  color: #21017E;
+  border: 1px solid #21017E;
+  background: none;
+  padding: 20px 28px;       /* smaller size */
+  border-radius: 999px;    /* pill shape */
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  align-self: flex-end;    /* push button to the right */
+  box-shadow: none;
+  transition: background-color 180ms ease, color 180ms ease, transform 120ms ease;
+}
+
+.contact-form button:hover {
+  background-color: #21017E;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* on very small screens keep it slightly inset from the edge */
+@media (max-width: 420px) {
+  .contact-form button {
+    padding: 8px 12px;
+    margin-right: 8px;
+  }
+}
+
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 680px;
+  gap: 12px;
+  margin-top: 4%;
+}
+
+/* new: two-column row for name + email */
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+
+/* each field in the row takes equal space */
+.form-field {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ensure inputs stretch full width inside the field */
+.form-field input,
+.form-field textarea,
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* responsive: stack on small screens */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+
+
+.Ping-heading-img img{
+
+  width: 300px !important;
+  height: 100px !important;
+  margin: 0 auto;
+
+}

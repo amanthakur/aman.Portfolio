@@ -1,0 +1,437 @@
+.Intro {
+    width: 100%;
+    min-height: 88vh;
+    background: radial-gradient(circle at 15% 20%, rgba(180, 230, 200, 0.6), transparent 50%),
+              radial-gradient(circle at 85% 20%, rgba(120, 150, 255, 0.5), transparent 50%),
+              radial-gradient(circle at 10% 80%, rgba(200, 250, 255, 0.4), transparent 60%),
+              #ffffff;
+              
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 6%;
+}
+
+.Intro-text{
+    max-width: 100%;
+}
+
+.Intro-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  color: #1e1e1e;
+}
+
+.Intro-text h1 img,
+.Intro-text .greeting img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.1em;
+  height: auto;
+  margin-left: 8px;
+  transform-origin: center;
+  transition: transform 320ms cubic-bezier(.2,.9,.2,1), filter 220ms ease, opacity 220ms ease;
+  will-change: transform, opacity;
+}
+
+/* hover (or focus) on the heading — image pops in with a gentle lift + rotate */
+.Intro-text h1:hover img,
+.Intro-text h1:focus-within img,
+.Intro-text .greeting:hover img,
+.Intro-text .greeting:focus-within img {
+  transform: translateY(-6px) rotate(-8deg) scale(1.08);
+  filter: drop-shadow(0 6px 14px rgba(33,1,126,0.12));
+  opacity: 1;
+}
+
+/* small wiggle animation while hovered (optional) */
+.Intro-text h1:hover img {
+  animation: wiggle 900ms cubic-bezier(.2,.8,.2,1);
+}
+
+@keyframes wiggle {
+  0%   { transform: translateY(-6px) rotate(-8deg) scale(1.08); }
+  30%  { transform: translateY(-8px) rotate(-4deg) scale(1.09); }
+  60%  { transform: translateY(-6px) rotate(-10deg) scale(1.07); }
+  100% { transform: translateY(-6px) rotate(-8deg) scale(1.08); }
+}
+
+.Intro-text p {
+  font-size: 24px;
+  line-height: 48px;
+  text-align: left;
+  color: #1e1e1e;
+  
+}
+
+
+
+
+.btn {
+    color: #000000;
+    background-color: lab(94.22% 0.04 -8.73) ;
+    border: 1px solid lab(44.0605% 29.0279 -86.0352);
+    color: lab(44.0605% 29.0279 -86.0352);
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 20px 20px 20px 20px;
+    padding-right: 56px; /* space for the icon */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.25s ease;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    height: 65px;
+    position: relative; /* needed for the pseudo-element */
+    overflow: visible;
+    padding-bottom: 1%;
+    line-height: 1.8!important;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%) translateX(8px); /* start slightly shifted right */
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2321017E'><path d='M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z'/></svg>");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: transform .25s ease, opacity .25s ease, filter .25s ease;
+  pointer-events: none;
+}
+
+/* hover styles */
+.btn:hover {
+  background-color:lab(44.0605% 29.0279 -86.0352);
+  color: #E0E5FF;
+}
+
+.btn:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0); /* slide in */
+  filter: brightness(0) invert(1); /* make the SVG light on dark background */
+}
+
+
+.Intro-text span {
+
+text-decoration: underline;
+text-decoration-color:lab(44.0605% 29.0279 -86.0352)!important;
+color: lab(44.0605% 29.0279 -86.0352)!important;
+
+} 
+
+
+
+
+.Intro-text span {
+  position: relative;
+  color: #21017E;
+  text-decoration: none; /* disable native underline so we can animate */
+  padding-bottom: 4px;
+  font-weight: bold;
+  
+
+  
+}
+
+/* animated underline */
+.Intro-text span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #1AA5DB 0%, #57C785 50%, #EDDD53 100%);
+  background-size: 200% 100%;
+  box-shadow: 0 2px 6px rgba(33,1,126,0.12);
+  transition: width 350ms cubic-bezier(.2,.8,.2,1), background-position 1s linear;
+  transform-origin: left center;
+}
+
+/* expand underline on hover/focus/active */
+.Intro-text span:hover::after,
+.Intro-text span:focus::after,
+.Intro-text span:active::after {
+  width: 100%;
+  background-position: -100% 0;
+}
+
+/* optional subtle continuous motion when already hovered */
+.Intro-text span:hover::after {
+  animation: slide-bg 1.5s linear infinite;
+}
+
+@keyframes slide-bg {
+  from { background-position: 0 0; }
+  to   { background-position: -200% 0; }
+}
+
+
+
+
+
+.cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Push button left, icons right */
+  margin-top: 2.5rem;
+  width: 100%; /* Ensure it spans full container width */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem; /* Space between icons */
+  font-size: 1.8rem; /* Increase size of icons */
+}
+
+.social-icons a {
+  color: #333; /* Default icon color */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:nth-child(1):hover { color: #0077b5; } /* LinkedIn */
+.social-icons a:nth-child(2):hover { color: #333; }    /* GitHub */
+.social-icons a:nth-child(3):hover { color: #1769ff; } /* Behance */
+.social-icons a:nth-child(4):hover { color: #000; }    /* Medium */
+
+
+
+.right img {
+  position: absolute;
+  right: 165px;
+  width: 300px;
+  height: 300px;
+  top: 60px;
+}
+
+
+
+.Intro {
+    width: 100%;
+    min-height: 88vh;
+    background: radial-gradient(circle at 15% 20%, rgba(180, 230, 200, 0.6), transparent 50%),
+              radial-gradient(circle at 85% 20%, rgba(120, 150, 255, 0.5), transparent 50%),
+              radial-gradient(circle at 10% 80%, rgba(200, 250, 255, 0.4), transparent 60%),
+              #ffffff;
+              
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 6%;
+}
+
+.Intro-text{
+    max-width: 100%;
+}
+
+.Intro-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  color: #1e1e1e;
+}
+
+.Intro-text h1 img,
+.Intro-text .greeting img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.1em;
+  height: auto;
+  margin-left: 8px;
+  transform-origin: center;
+  transition: transform 320ms cubic-bezier(.2,.9,.2,1), filter 220ms ease, opacity 220ms ease;
+  will-change: transform, opacity;
+}
+
+/* hover (or focus) on the heading — image pops in with a gentle lift + rotate */
+.Intro-text h1:hover img,
+.Intro-text h1:focus-within img,
+.Intro-text .greeting:hover img,
+.Intro-text .greeting:focus-within img {
+  transform: translateY(-6px) rotate(-8deg) scale(1.08);
+  filter: drop-shadow(0 6px 14px rgba(33,1,126,0.12));
+  opacity: 1;
+}
+
+/* small wiggle animation while hovered (optional) */
+.Intro-text h1:hover img {
+  animation: wiggle 900ms cubic-bezier(.2,.8,.2,1);
+}
+
+@keyframes wiggle {
+  0%   { transform: translateY(-6px) rotate(-8deg) scale(1.08); }
+  30%  { transform: translateY(-8px) rotate(-4deg) scale(1.09); }
+  60%  { transform: translateY(-6px) rotate(-10deg) scale(1.07); }
+  100% { transform: translateY(-6px) rotate(-8deg) scale(1.08); }
+}
+
+.Intro-text p {
+  font-size: 24px;
+  line-height: 48px;
+  text-align: left;
+  color: #1e1e1e;
+  
+}
+
+
+
+
+.btn {
+    color: #000000;
+    background-color: lab(94.22% 0.04 -8.73) ;
+    border: 1px solid lab(44.0605% 29.0279 -86.0352);
+    color: lab(44.0605% 29.0279 -86.0352);
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 20px 20px 20px 20px;
+    padding-right: 56px; /* space for the icon */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.25s ease;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    height: 65px;
+    position: relative; /* needed for the pseudo-element */
+    overflow: visible;
+    padding-bottom: 1%;
+    line-height: 1.8!important;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%) translateX(8px); /* start slightly shifted right */
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2321017E'><path d='M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z'/></svg>");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: transform .25s ease, opacity .25s ease, filter .25s ease;
+  pointer-events: none;
+}
+
+/* hover styles */
+.btn:hover {
+  background-color:lab(44.0605% 29.0279 -86.0352);
+  color: #E0E5FF;
+}
+
+.btn:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0); /* slide in */
+  filter: brightness(0) invert(1); /* make the SVG light on dark background */
+}
+
+
+.Intro-text span {
+
+text-decoration: underline;
+text-decoration-color:lab(44.0605% 29.0279 -86.0352)!important;
+color: lab(44.0605% 29.0279 -86.0352)!important;
+
+} 
+
+
+
+
+.Intro-text span {
+  position: relative;
+  color: #21017E;
+  text-decoration: none; /* disable native underline so we can animate */
+  padding-bottom: 4px;
+  font-weight: bold;
+  
+
+  
+}
+
+/* animated underline */
+.Intro-text span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #1AA5DB 0%, #57C785 50%, #EDDD53 100%);
+  background-size: 200% 100%;
+  box-shadow: 0 2px 6px rgba(33,1,126,0.12);
+  transition: width 350ms cubic-bezier(.2,.8,.2,1), background-position 1s linear;
+  transform-origin: left center;
+}
+
+/* expand underline on hover/focus/active */
+.Intro-text span:hover::after,
+.Intro-text span:focus::after,
+.Intro-text span:active::after {
+  width: 100%;
+  background-position: -100% 0;
+}
+
+/* optional subtle continuous motion when already hovered */
+.Intro-text span:hover::after {
+  animation: slide-bg 1.5s linear infinite;
+}
+
+@keyframes slide-bg {
+  from { background-position: 0 0; }
+  to   { background-position: -200% 0; }
+}
+
+
+
+
+
+.cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Push button left, icons right */
+  margin-top: 2.5rem;
+  width: 100%; /* Ensure it spans full container width */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem; /* Space between icons */
+  font-size: 1.8rem; /* Increase size of icons */
+}
+
+.social-icons a {
+  color: #333; /* Default icon color */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:nth-child(1):hover { color: #0077b5; } /* LinkedIn */
+.social-icons a:nth-child(2):hover { color: #333; }    /* GitHub */
+.social-icons a:nth-child(3):hover { color: #1769ff; } /* Behance */
+.social-icons a:nth-child(4):hover { color: #000; }    /* Medium */
+
+
+
+.right img {
+  position: absolute;
+  right: 165px;
+  width: 300px;
+  height: 300px;
+  top: 60px;
+}
