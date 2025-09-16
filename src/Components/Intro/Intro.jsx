@@ -1,5 +1,5 @@
 import React from 'react'
-import './intro.css'
+import './Intro.css'
 import namsate from '../../assets/namsate.svg'
 import whatido from '../../assets/whatido.svg'
 
