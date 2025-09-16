@@ -1,5 +1,5 @@
 import React from 'react'
-import './qclear.css'
+import './Qclear.css'
 import Qdash from '../../assets/Qdash.svg'
 import Qlog from '../../assets/Qlog.svg'
 import Qmid from '../../assets/Qmid.svg'
