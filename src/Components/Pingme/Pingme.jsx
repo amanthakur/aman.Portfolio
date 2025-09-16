@@ -1,5 +1,5 @@
 import React from 'react'
-import './pingme.css'
+import './Pingme.css'
 import Contact from '../Contact/contact'
 const Pingme = () => {
   return (

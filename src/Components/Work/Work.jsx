@@ -1,6 +1,6 @@
 // ...existing code...
 import React from 'react'
-import './work.css'
+import './Work.css'
 import work1 from '../../assets/work1.svg'
 import work2 from '../../assets/work2.svg'
 import Qdash from '../../assets/Qdash.svg'

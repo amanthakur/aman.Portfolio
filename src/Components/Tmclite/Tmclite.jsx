@@ -1,5 +1,5 @@
 import React from 'react'
-import './tmclite.css'
+import './Tmclite.css'
 
 import work1 from '../../assets/work1.svg'
 import Risk from '../../assets/Risk.svg'

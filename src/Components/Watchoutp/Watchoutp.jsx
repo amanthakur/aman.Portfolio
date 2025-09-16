@@ -1,5 +1,5 @@
 import React from 'react'
-import './watchoutp.css'
+import './Watchoutp.css'
 import work1 from '../../assets/work1.svg'
 import Risk from '../../assets/Risk.svg'
 import list from '../../assets/list.svg'

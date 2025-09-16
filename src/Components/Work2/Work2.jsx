@@ -1,5 +1,5 @@
 import React from 'react'
-import './work2.css'
+import './Work2.css'
 import work2 from '../../assets/work2.svg'
 
 const Work2 = () => {

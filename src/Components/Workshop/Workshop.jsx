@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import './workshop.css'
+import './Workshop.css'
 import WorkshopImage from '../../assets/workshop.webp'
 import Contact from '../Contact/contact'
 const ACCORDION_ITEMS = [
