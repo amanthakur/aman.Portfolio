@@ -1,5 +1,5 @@
 import React from 'react'
-import './resume.css'
+import './Resume.css'
 import  cup from '../../assets/cup.svg' 
 import shape from '../../assets/shape.svg'
 import achive from '../../assets/achive.svg'
