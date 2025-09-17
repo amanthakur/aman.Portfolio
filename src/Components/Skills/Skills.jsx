@@ -1,10 +1,8 @@
 import React from 'react'
 import './Skills.css'
-import namsate from '../../assets/namsate.svg'
 import p1 from '../../assets/p1.svg'
 import p2 from '../../assets/p2.svg'
 import p3 from '../../assets/p3.svg'
-import tools from '../../assets/tools.svg'
 import figma from '../../assets/Tools/figma.svg'
 import Ai from '../../assets/Tools/Ai.svg'
 import Ae from '../../assets/Tools/Ae.svg'
@@ -52,6 +50,7 @@ const Skills = () => {
           <div className="logo-track">
             <div className="tooltip" data-tooltip="Figma"><img src={figma} alt="Figma" /></div>
             <div className="tooltip" data-tooltip="Photoshop"><img src={Ps} alt="Photoshop" /></div>
+            <div className="tooltip" data-tooltip="Adobe After Effects"><img src={Ae} alt="Adobe After Effects" /></div>
             <div className="tooltip" data-tooltip="Adobe Illustrator"><img src={Ai} alt="Adobe Illustrator" /></div>
             <div className="tooltip" data-tooltip="Miro"><img src={Miro} alt="Miro" /></div>
             <div className="tooltip" data-tooltip="User Testing"><img src={User} alt="User Testing" /></div>
@@ -66,6 +65,8 @@ const Skills = () => {
             {/* Duplicate logos for infinite loop */}
             <div className="tooltip" data-tooltip="Figma"><img src={figma} alt="Figma" /></div>
             <div className="tooltip" data-tooltip="Photoshop"><img src={Ps} alt="Photoshop" /></div>
+           <div className="tooltip" data-tooltip="Adobe After Effects"><img src={Ae} alt="Adobe After Effects" /></div>
+
             <div className="tooltip" data-tooltip="Adobe Illustrator"><img src={Ai} alt="Adobe Illustrator" /></div>
             <div className="tooltip" data-tooltip="Miro"><img src={Miro} alt="Miro" /></div>
             <div className="tooltip" data-tooltip="User Testing"><img src={User} alt="User Testing" /></div>
