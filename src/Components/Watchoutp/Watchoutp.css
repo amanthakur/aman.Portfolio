@@ -248,3 +248,46 @@ font-size: 16px;
   line-height: normal;
 }
 
+/* ===================== */
+/* Tablet Styles for Watchout Box */
+/* ===================== */
+@media (max-width: 1024px) {
+  .watchout-box {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .watchout-box-1 {
+    width: 40%;
+    height: auto;
+    padding: 3%;
+    text-align: center;
+  }
+
+  .watchout-box-1 h4 {
+    font-size: 16px !important;
+  }
+}
+
+/* ===================== */
+/* Mobile Styles for Watchout Box */
+/* ===================== */
+@media (max-width: 600px) {
+  .watchout-box {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+    align-items: center;
+  }
+
+  .watchout-box-1 {
+    width: 90%;  /* Almost full width */
+    height: auto;
+    padding: 4%;
+    text-align: center;
+  }
+
+  .watchout-box-1 h4 {
+    font-size: 14px !important;
+  }
+}

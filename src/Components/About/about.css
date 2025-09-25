@@ -1,11 +1,11 @@
 .about-sec {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
-.my-img  {
+.my-img {
   flex: 1;
-
 }
 
 .my-img img {
@@ -18,11 +18,10 @@
   flex: 2;
   height: 100%;
   padding: 6%;
-   background: conic-gradient(from 114deg at 50% 50%, #e0e5ff, #e3e8ff, #e6eaff, #e9edff, #ebeeff, #ebeeff, #ebeeff, #ebeeff);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: conic-gradient(from 114deg at 50% 50%, #e0e5ff, #e3e8ff, #e6eaff, #e9edff, #ebeeff, #ebeeff, #ebeeff, #ebeeff);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: center;
- 
 }
 
 .about-text h1 {
@@ -31,23 +30,18 @@
 }
 
 .about-text p {
-padding: 1% !important;    
-font-size: 26px;
-line-height: 1.6em;
-font-weight: 400 !important;
+  padding: 1% !important;    
+  font-size: 26px;
+  line-height: 1.6em;
+  font-weight: 400 !important;
 }
-
-
 
 .text-section p {
-font-size: 32px;
-line-height: 1.6;
-padding-top: 3% !important;
-padding-bottom: 4% !important;
-
+  font-size: 32px;
+  line-height: 1.6;
+  padding-top: 3% !important;
+  padding-bottom: 4% !important;
 }
-
-/* ...existing code... */
 
 .accordion {
   margin-top: 20px;
@@ -56,9 +50,8 @@ padding-bottom: 4% !important;
 }
 
 .accordion p {
-
-    font-size: 16px;
- }
+  font-size: 16px;
+}
 
 .accordion-item {
   border-top: 1px solid rgba(0,0,0,0.06);
@@ -90,12 +83,10 @@ padding-bottom: 4% !important;
   margin-left: 12px;
 }
 
-/* rotate when open */
 .accordion-toggle.open .chev {
   transform: rotate(45deg);
 }
 
-/* animated height collapse */
 .accordion-content {
   overflow: hidden;
   transition: max-height 300ms cubic-bezier(.2,.9,.2,1);
@@ -110,129 +101,154 @@ padding-bottom: 4% !important;
   font-size: 15px;
 }
 
-.accordion-content-inner p{
-padding: 1% !important;    
-font-size: 16px;
-line-height: 1.8em !important;
-font-weight: 400 !important;
+.accordion-content-inner p {
+  padding: 1% !important;    
+  font-size: 16px;
+  line-height: 1.8em !important;
+  font-weight: 400 !important;
 }
 
 /* small screens: spacing */
 @media (max-width: 600px) {
-  .accordion-toggle { font-size: 16px; padding: 12px 14px; }
+  .accordion-toggle { font-size: 18px; padding: 12px 14px; }
   .accordion-content-inner { padding: 10px 14px; font-size: 14px; }
 }
 
-/* ...existing code... */
-
-
-
-.whoiam{
-
+/* WHO I AM Section */
+.whoiam {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding-top: 10%;
   padding-bottom: 6%;
-
+  gap: 20px;
 }
 
-
-.whoiam-right{
-
+.whoiam-right {
   width: 50%;
-  
-  
 }
 
-.whoiam-right p{
-
-padding-top: 3%!important;
+.whoiam-right p {
+  padding-top: 3%!important;
   padding-bottom: 1%!important;  
 }
 
-.whoiam-left{
-
+.whoiam-left {
   width: 50%!important;
   padding: 2%;
- 
 }
 
-.whoiam-left p{
-
+.whoiam-left p {
   font-size: 24px!important;
- 
 }
 
-.whoiam-left b{
-
+.whoiam-left b {
   font-size: 26px!important;
- 
 }
 
-
-.ps{ 
+.ps { 
   width: 100%;
   background-color: #fff1ba;
-   border: 1px solid #ebd26e;
+  border: 1px solid #ebd26e;
   border-radius: 15px;
   padding: 3%;
- 
-
 }
 
-
-.ps p{ 
+.ps p { 
   font-size: 14px !important;
-  
-
-}
-.ps2 p{ font-size: 14px !important;}
-
-
-.ps2{ 
-margin-top: 4%;
-width: 100%;
-display: flex;
-
 }
 
+.ps2 p { font-size: 14px !important; }
 
+.ps2 { 
+  margin-top: 4%;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
 
-
-
-.ux{
-
-  width:48%;
+.ux {
+  width: 48%;
   background-color: #E1D7FA;
-   border: 1px solid #bfa5ff;
+  border: 1px solid #bfa5ff;
   margin-right: 1%;
   padding: 3%;
   border-radius: 15px;
- 
-
- 
 }
 
-
-.pro{
-
+.pro {
   width: 48%;
   margin-left: 3%;
   background-color: #C8E3FF;
   border: 1px solid #5aa7f9;
   padding: 3%;
   border-radius: 15px;
-  
-
-
 }
 
-
-.about-heading-img img{
-
+.about-heading-img img {
   width: 300px !important;
   height: 100px !important;
   margin: 0 auto;
+}
 
+/* =========================
+   MOBILE FRIENDLY STYLES
+   ========================= */
+@media (max-width: 768px) {
+  .about-sec {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text {
+    padding: 4%;
+  }
+
+  .about-text h1 {
+    font-size: 32px;
+  }
+
+  .about-text p {
+    font-size: 18px;
+  }
+
+  .text-section p {
+    font-size: 20px;
+  }
+
+  .whoiam {
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .whoiam-left, 
+  .whoiam-right {
+    width: 100%!important;
+    padding: 2% 0;
+    text-align: center;
+  }
+
+  .whoiam-left p {
+    font-size: 18px!important;
+  }
+
+  .whoiam-left b {
+    font-size: 20px!important;
+  }
+
+  .ps2 {
+    flex-direction: column;
+  }
+
+  .ux, .pro {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .about-heading-img img {
+    width: 200px !important;
+    height: auto !important;
+  }
 }

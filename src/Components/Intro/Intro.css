@@ -435,3 +435,83 @@ color: lab(44.0605% 29.0279 -86.0352)!important;
   height: 300px;
   top: 60px;
 }
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 1024px) {
+  .Intro {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12%;
+    text-align: center;
+  }
+
+  .Intro-text {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .Intro-text h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .Intro-text p {
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    font-size: 16px;
+    padding: 16px 20px;
+    height: auto;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .right img {
+    position: static;
+    margin-top: 2rem;
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Intro {
+    padding-top: 18%;
+  }
+
+  .Intro-text h1 {
+    font-size: 28px;
+  }
+
+  .Intro-text p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 14px 18px;
+  }
+
+  .right img {
+    width: 180px;
+    height: 180px;
+  }
+}

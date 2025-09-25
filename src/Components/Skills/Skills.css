@@ -379,4 +379,119 @@ color: #175B34;
 }
 
 
+/* 📱 Mobile & Tablet Responsive Styles */
+@media (max-width: 1024px) {
+  /* Skills Section */
+  .Skills-list {
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .Skill {
+    flex: 0 1 calc(50% - 12px); /* 2 per row on tablets */
+    min-width: 180px;
+  }
+
+  .Skill h4 {
+    font-size: 20px !important;
+  }
+
+  .Skill p {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 8px;
+  }
+
+  /* Tools Section */
+  .Tools h2 {
+    font-size: 32px;
+    padding-top: 10%;
+  }
+
+  .tools-heading-img img {
+    width: 200px !important;
+  }
+
+  .logo-track img {
+    width: 90px;
+    margin: 0 16px;
+  }
+
+  /* Skill Box */
+  .skill-box-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-box-inner {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Skills stack vertically */
+  .Skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Skill {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 14px;
+  }
+
+  .Skill h4 {
+    font-size: 18px !important;
+  }
+
+  .Skill p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Tools Section */
+  .Tools h2 {
+    font-size: 26px;
+    padding-top: 12%;
+  }
+
+  .tools-heading-img img {
+    width: 160px !important;
+  }
+
+  .logo-track img {
+    width: 70px;
+    margin: 0 12px;
+  }
+
+  /* Skill Box Section */
+  .skill-box-inner {
+    font-size: 12px;
+    padding: 8px 14px;
+    margin: 6px;
+  }
+
+  .skill-box-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .skill-box-h-img img {
+    height: 80px;
+  }
+
+  /* Tooltip adjustments */
+  .tooltip img {
+    width: 45px;
+  }
+
+  .tooltip::after {
+    bottom: -28px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
 
