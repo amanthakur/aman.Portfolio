@@ -16,6 +16,7 @@ import Qclear from './Components/Qclear/Qclear'
 
 const Home = () => (
   <>
+  
     <Intro/>
     <Skills/>
     <Work/>

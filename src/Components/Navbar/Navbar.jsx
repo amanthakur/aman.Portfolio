@@ -39,7 +39,7 @@ const Navbar = () => {
           className={`has-dropdown ${portfolioOpen ? 'open' : ''}`} 
           onClick={() => setPortfolioOpen(!portfolioOpen)}
         >
-          <span className="dropdown-toggle">Portfolio</span>
+          <span className="dropdown-toggle">My Work</span>
           <div className="dropdown" role="menu" aria-label="Projects">
             <ul>
               <li><NavLink to="../Watchoutp" onClick={closeMenu}>Watchout</NavLink></li>
