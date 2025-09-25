@@ -1,23 +1,23 @@
-import React from 'react';
+import React from 'react'
 import './Skills.css'
 import P1 from '../../assets/p1.svg'
 import P2 from '../../assets/p2.svg'
 import P3 from '../../assets/p3.svg'
-import Figma from '../../assets/Tools/figma.svg'
-import Ai from '../../assets/Tools/ai.svg'
-import Ae from '../../assets/Tools/ae.svg'
-import Github from '../../assets/Tools/github.svg'
-import Gsheet from '../../assets/Tools/gsheet.svg'
-import Jira from '../../assets/Tools/jira.svg'
-import Miro from '../../assets/Tools/miro.svg'
-import Notion from '../../assets/Tools/notion.svg'
-import Ps from '../../assets/Tools/ps.svg'
-import Slack from '../../assets/Tools/slack.svg'
-import Subl from '../../assets/Tools/subl.svg'
-import User from '../../assets/Tools/User.svg'
-import Vs from '../../assets/Tools/vs.svg'
-import Myw from '../../assets/Tools/myw.svg'
-import Simg from '../../assets/Tools/simg.svg'
+import Figma from '../../assets/Tools/Figma.svg';
+import Ai from '../../assets/Tools/Ai.svg';
+import Ae from '../../assets/Tools/Ae.svg';
+import Github from '../../assets/Tools/Github.svg';
+import Gsheet from '../../assets/Tools/Gsheet.svg';
+import Jira from '../../assets/Tools/Jira.svg';
+import Miro from '../../assets/Tools/Miro.svg';
+import Notion from '../../assets/Tools/Notion.svg';
+import Ps from '../../assets/Tools/Ps.svg';
+import Slack from '../../assets/Tools/Slack.svg';
+import Subl from '../../assets/Tools/Subl.svg';
+import User from '../../assets/Tools/User.svg';
+import Vs from '../../assets/Tools/Vs.svg';
+import Myw from '../../assets/Tools/Myw.svg';
+import Simg from '../../assets/Tools/Simg.svg';
 
 const Skills = () => {
   return (
