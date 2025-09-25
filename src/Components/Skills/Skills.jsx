@@ -16,8 +16,8 @@ import Slack from '../../assets/Tools/slack.svg'
 import Subl from '../../assets/Tools/subl.svg'
 import User from '../../assets/Tools/User.svg'
 import Vs from '../../assets/Tools/vs.svg'
-import Myw from '../../assets/Tools/Myw.svg'
-import Simg from '../../assets/Tools/Simg.svg'
+import Myw from '../../assets/Tools/myw.svg'
+import Simg from '../../assets/Tools/simg.svg'
 
 const Skills = () => {
   return (
