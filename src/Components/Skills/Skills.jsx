@@ -1,9 +1,9 @@
 import React from 'react'
 import './Skills.css'
-import p1 from '../../assets/p1.svg'
-import p2 from '../../assets/p2.svg'
-import p3 from '../../assets/p3.svg'
-import figma from '../../assets/Tools/figma.svg'
+import P1 from '../../assets/p1.svg'
+import P2 from '../../assets/p2.svg'
+import P3 from '../../assets/p3.svg'
+import Figma from '../../assets/Tools/figma.svg'
 import Ai from '../../assets/Tools/ai.svg'
 import Ae from '../../assets/Tools/ae.svg'
 import Github from '../../assets/Tools/Github.svg'
@@ -26,17 +26,17 @@ const Skills = () => {
       {/* SKILLS LIST */}
       <div className='Skills-list'>
         <div className='Skill'>
-          <img src={p3} alt="Product Strategy" />
+          <img src={P3} alt="Product Strategy" />
           <h4>Product Strategy</h4>
           <p>Turn user problems into clear, actionable roadmaps and measurable bets that align with business goals. Leverage data-driven insights, market research, and user feedback to prioritize initiatives, reduce risk, and deliver long-term value.</p>
         </div>
         <div className='Skill'>
-          <img src={p1} alt="UX Design" />
+          <img src={P1} alt="UX Design" />
           <h4>UX Design (Research-Led)</h4>
           <p>Lead research to uncover user needs, design intuitive and accessible flows, and validate solutions through iterative testing. Collaborate with teams to ensure scalable, consistent, and goal-driven experiences.</p>
         </div>
         <div className='Skill'>
-          <img src={p2} alt="Prototype to Production" />
+          <img src={P2} alt="Prototype to Production" />
           <h4>Prototype → Production</h4>
           <p>Create high-fidelity coded prototypes, refine them into scalable, production-ready components, and collaborate with engineering to ensure quality, consistency, and smooth delivery.</p>
         </div>
@@ -48,7 +48,7 @@ const Skills = () => {
 
         <div className="logo-slider">
           <div className="logo-track">
-            <div className="tooltip" data-tooltip="Figma"><img src={figma} alt="Figma" /></div>
+            <div className="tooltip" data-tooltip="Figma"><img src={Figma} alt="Figma" /></div>
             <div className="tooltip" data-tooltip="Photoshop"><img src={Ps} alt="Photoshop" /></div>
             <div className="tooltip" data-tooltip="Adobe After Effects"><img src={Ae} alt="Adobe After Effects" /></div>
             <div className="tooltip" data-tooltip="Adobe Illustrator"><img src={Ai} alt="Adobe Illustrator" /></div>
@@ -63,7 +63,7 @@ const Skills = () => {
             <div className="tooltip" data-tooltip="Jira"><img src={Jira} alt="Jira" /></div>
 
             {/* Duplicate logos for infinite loop */}
-            <div className="tooltip" data-tooltip="Figma"><img src={figma} alt="Figma" /></div>
+            <div className="tooltip" data-tooltip="Figma"><img src={Figma} alt="Figma" /></div>
             <div className="tooltip" data-tooltip="Photoshop"><img src={Ps} alt="Photoshop" /></div>
            <div className="tooltip" data-tooltip="Adobe After Effects"><img src={Ae} alt="Adobe After Effects" /></div>
 
