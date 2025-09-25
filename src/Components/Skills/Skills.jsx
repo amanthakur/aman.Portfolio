@@ -1,11 +1,11 @@
-import React from 'react'
-import './Skills.css'
-import P1 from '../../assets/p1.svg'
-import P2 from '../../assets/p2.svg'
-import P3 from '../../assets/p3.svg'
+import React from 'react';
+import './Skills.css';
+import P1 from '../../assets/p1.svg';
+import P2 from '../../assets/p2.svg';
+import P3 from '../../assets/p3.svg';
 import Figma from '../../assets/Tools/Figma.svg';
-import Ai from '../../assets/Tools/Ai.svg';
-import Ae from '../../assets/Tools/Ae.svg';
+import Ai from '../../assets/Tools/Aia.svg';
+import Ae from '../../assets/Tools/Aea.svg';
 import Github from '../../assets/Tools/Github.svg';
 import Gsheet from '../../assets/Tools/Gsheet.svg';
 import Jira from '../../assets/Tools/Jira.svg';
