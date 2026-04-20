@@ -14,9 +14,10 @@ import Contact from './Components/Contact/contact'
 import Tmclite from './Components/Tmclite/Tmclite'
 import Qclear from './Components/Qclear/Qclear'
 
+
 const Home = () => (
   <>
-  
+
     <Intro/>
     <Skills/>
     <Work/>
